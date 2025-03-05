@@ -1,69 +1,66 @@
-# Face Recognition System
+# Facial Recognition System  
 
-This project implements a face recognition system using OpenCV and the `face_recognition` library. It includes features such as:
-- **Image-based Face Recognition**: Compare a test image with a dataset of known faces.
-- **Live Camera Face Recognition**: Detect and recognize faces in real-time.
-- **Face Lock System**: Grant access based on recognized faces.
+## 🚀 Overview  
+An intelligent **Face Recognition System** for real-time identification and verification using machine learning.  
+## ✨ Includes
 
-## Features
-✅ **Load Known Faces**: Automatically loads faces from a folder and encodes them.<br>
-✅ **Recognize Faces in Images**: Compare a test image with stored face encodings.<br>
-✅ **Live Face Recognition**: Detect faces in real-time via webcam.<br>
-✅ **Face Lock System**: Grants access if a recognized face is detected.
+🔹 Image-based Face Recognition: Compare a test image with a dataset of known faces.<br>
+🔹 Live Camera Face Recognition: Detect and recognize faces in real-time.<br>
+🔹 Face Lock System: Grant access based on recognized faces.<br>
+🔹 Registering New(unknown) Face Dynamically.
 
-## Installation
 
-### Prerequisites
-Make sure you have Python installed. Then, install the required dependencies:
-```bash
-pip install opencv-python numpy face-recognition matplotlib pillow
+## 🛠️ Tech Stack  
+🔹 **Languages**: Python <br>
+🔹 **Libraries**: OpenCV, face_recognition, NumPy, Matplotlib,  
+
+## 📦 Installation  
+Clone the repo: 
+```sh
+git clone https://github.com/Siddhesh-04/CodeClause-Internship-Face-Recognition-System.git
 ```
-
-## Usage
-
+```
+cd face-recognition-system
+```
+## install dependencies: 
+```bash
+pip install opencv-python numpy face-recognition matplotlib pillow  
+```
+## 🎯 Usage
 ### 1. Load Known Faces
-Store known faces inside the `sample_images/` directory (JPG, PNG, or JPEG format). Each filename should be the name of the person.
+Store known faces inside the sample_images/ directory (JPG, PNG, or JPEG format). Each filename should be the name of the person.
 
 ### 2. Run the Face Recognition System
-Run the script to recognize faces from images, live camera, or the face lock system.
+ Run the script to recognize faces from images, live camera, or the face lock system.<br>
+ You can also run it in Jupyter Notebook with a .ipynb extension using a Boolean variable like IN_JUPYTER = True or False.
 ```bash
 python face_recognition.py
 ```
-
 ### 3. Functionality
-
-#### Recognize a Face from an Image
-Uncomment the following line in `face_recognition.py` and run the script:
-```python
-recognize_faces_from_image(known_face_encodings, known_face_names, "sample_images/test.jpg")
+Enter Choice to Run/call function
 ```
-
-#### Live Face Recognition
-Run face recognition in a webcam feed:
-```python
-live_face_recognition(known_face_encodings, known_face_names, in_jupyter=False)
+[1] Recognize Face in Image - [sample_faces/user1.jpg (Your Image Path)]
+[2] Live Face Recognition - Real-time face recognition 🎥
+[3] Register New Face - Dynamically Adding new user/face to dataset
+[4] Liveness Detection
+[5] FACE LOCK SIMULATION 
+[6] Quit/Exit
+Enter your choice: 
 ```
-Set `in_jupyter=True` if running inside a Jupyter Notebook.
-
-#### Face Lock System
-Run a face lock system simulation:
-```python
-face_lock_system(known_face_encodings, known_face_names, in_jupyter=False)
-```
-
 ## Directory Structure
 ```
 Face-Recognition-System/
+│── sample_face/         # Test images for face recognition with Image
 │── sample_images/       # Folder containing known face images
 │── face_recognition.py  # Main script
 │── README.md            # Documentation
 ```
-
-## Future Improvements
+🔮 Future Enhancements
+```
 🚀 Improve recognition accuracy using deep learning
-🚀 Implement multi-face tracking in real-time
-🚀 Enhance security measures for the face lock system
-
+🌐 Web/App GUI integration
+🔐 Smart lock hardware integration
+```
 ## License
 This project is open-source and available for modification and improvement.
 
