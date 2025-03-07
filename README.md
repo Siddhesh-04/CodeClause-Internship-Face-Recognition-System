@@ -34,7 +34,7 @@ Store known faces inside the sample_images/ directory (JPG, PNG, or JPEG format)
  Run the script to recognize faces from images, live camera, or the face lock system.<br>
  You can also run it in Jupyter Notebook with a .ipynb extension using a Boolean variable like IN_JUPYTER = True or False.
 ```bash
-python face_recognition.py
+python face_rec.py
 ```
 ### 3. Functionality
 Enter Choice to Run/call function
